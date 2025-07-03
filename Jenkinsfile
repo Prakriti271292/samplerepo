@@ -48,6 +48,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 sh """
+                    whoami
                     sudo docker build -t ${IMAGE_TAG} .
                 """
                 echo "Docker image built successfully"
