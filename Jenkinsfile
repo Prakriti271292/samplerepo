@@ -38,7 +38,7 @@ pipeline {
             steps {
                 withCredentials([string(credentialsId: 'dockerhubpwd', variable: 'dockerhubpwd')]) {
                     sh """
-                        docker login -u psrv3 -p ${dockerhubpwd}
+                        docker login -u narula2712 -p ${dockerhubpwd}
                     """
                 }
                 echo 'Login successfully'
