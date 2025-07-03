@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/iampsrv/cicdgfg35.git'
+                git 'https://github.com/Prakriti271292/samplerepo.git'
             }
         }
 
