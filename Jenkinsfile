@@ -52,7 +52,7 @@ pipeline {
                     sudo docker build -t ${IMAGE_TAG} .
                 """
                 echo "Docker image built successfully"
-                sh "docker images"
+                sh "sudo docker images"
             }
         }
 
